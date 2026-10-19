@@ -1,0 +1,170 @@
+{
+  "checked_at": "2026-10-19 Asia/Seoul",
+  "scope": "Two-stock development sample, two daily indices, and whole-source coverage inventory. Not the complete source dataset.",
+  "live_feed": false,
+  "files": [
+    {
+      "path": "data/daily/000660.csv",
+      "bytes": 95114,
+      "sha256": "e6e523759b89e44f9cf051cc1d5cdf048bc48be38050aae32291ad45721ebe35",
+      "rows": 1268,
+      "first_value": "2021-07-20",
+      "last_value": "2026-09-23"
+    },
+    {
+      "path": "data/daily/005930.csv",
+      "bytes": 92534,
+      "sha256": "e20835d6e16c8afaee04b4e98caa42f4749016d2f27ed49272e81ffd78588f72",
+      "rows": 1268,
+      "first_value": "2021-07-20",
+      "last_value": "2026-09-23"
+    },
+    {
+      "path": "data/indices/KQ11.csv",
+      "bytes": 30059,
+      "sha256": "0f9b4e4842c4471c3b9374126d54096663ead3c777edce98d787b5d696bd5403",
+      "rows": 350,
+      "first_value": "2025-04-01",
+      "last_value": "2026-09-04"
+    },
+    {
+      "path": "data/indices/KS11.csv",
+      "bytes": 30748,
+      "sha256": "b810611c51ceab0602d2639dee72673064c3f95ad7c039ab5e84d5fbe60a6b71",
+      "rows": 350,
+      "first_value": "2025-04-01",
+      "last_value": "2026-09-04"
+    },
+    {
+      "path": "data/intraday_1m/000660.csv.gz",
+      "bytes": 1078545,
+      "sha256": "38022989911e1018a52a96f6455715e237148a7830aa6cde7a2620e191802ab0"
+    },
+    {
+      "path": "data/intraday_1m/000660.parquet",
+      "bytes": 1002426,
+      "sha256": "f03eea9467c3d24172e6fc7adac59ec0f320ed27310f40fc3c7c8cdedfb47f49",
+      "rows": 104692,
+      "first_value": "2025-07-01T09:00:00",
+      "last_value": "2026-09-04T15:35:00"
+    },
+    {
+      "path": "data/intraday_1m/005930.csv.gz",
+      "bytes": 1070378,
+      "sha256": "6642f0c4e7f38f97499f79ead3614ac83e3c19d685bbc4bfc9bf6ef00a3776c3"
+    },
+    {
+      "path": "data/intraday_1m/005930.parquet",
+      "bytes": 1057322,
+      "sha256": "f6fd2b5e3e5e9763f330e175327f3cd7bc5a24fd57c9473aaf011df2a7b39331",
+      "rows": 104708,
+      "first_value": "2025-07-01T09:00:00",
+      "last_value": "2026-09-04T15:35:00"
+    },
+    {
+      "path": "inventory/daily_coverage.csv",
+      "bytes": 104008,
+      "sha256": "43811db64c02bd70c08cd571d61f78d53f64bdbd8f64e0429fffb0529f544248",
+      "rows": 3080,
+      "first_value": "2021-07-20",
+      "last_value": "2026-09-23"
+    },
+    {
+      "path": "inventory/daily_sources.csv",
+      "bytes": 160,
+      "sha256": "7a46493888169f9b9d7399404c52e85280876b0ccd253756c7ba92ff527a89ea",
+      "rows": 2,
+      "first_value": "2021-07-20",
+      "last_value": "2026-07-24"
+    },
+    {
+      "path": "inventory/intraday_coverage.csv",
+      "bytes": 127998,
+      "sha256": "26c8f9e2340ec7566020f2eb48484952d365cda568b3f4fc0023f8b471fc193d",
+      "rows": 2009,
+      "first_value": "2025-07-01 09:00:00",
+      "last_value": "2026-09-04 09:00:00"
+    },
+    {
+      "path": "preview/000660_1m_last500.csv",
+      "bytes": 53719,
+      "sha256": "e7d724346109c516cfed82e77fb633ef38050d0dbe60eb3eda9e5063cd7b49ed",
+      "rows": 500,
+      "first_value": "2026-09-03T13:24:00",
+      "last_value": "2026-09-04T15:35:00"
+    },
+    {
+      "path": "preview/005930_1m_last500.csv",
+      "bytes": 52038,
+      "sha256": "c6de5e6370b1f984b448d0307d098627f68e9ea2dbefb006af1a8ab71d987d63",
+      "rows": 500,
+      "first_value": "2026-09-03T13:24:00",
+      "last_value": "2026-09-04T15:35:00"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3975,
+      "sha256": "655aa6af5c018909dbe5e20f00ccd1531720fa432ec39210729e6edcf79ca539"
+    }
+  ],
+  "source_daily": {
+    "symbols": 3080,
+    "rows": 3351577,
+    "start": "2021-07-20",
+    "end": "2026-09-23"
+  },
+  "source_intraday_files": {
+    "venue": "KRX",
+    "interval_minutes": 1,
+    "symbols": 2009,
+    "files": 27704,
+    "rows": 140451231,
+    "start": "2025-07-01 09:00:00",
+    "end": "2026-09-04 15:35:00",
+    "bytes": 2759703627,
+    "verified_by": "All actual Parquet footers; does not certify every trading minute is present."
+  },
+  "exported_index_source": "KIWOOM_REST_INDEX / VALIDATED_OHLC only. Yahoo proxy duplicates excluded.",
+  "exported_sample_quality": [
+    {
+      "security_code": "005930",
+      "kind": "daily",
+      "rows": 1268,
+      "no_price_formation_rows": 0,
+      "invalid_ohlc_rows": 0
+    },
+    {
+      "security_code": "005930",
+      "kind": "intraday_1m",
+      "rows": 104708,
+      "no_price_formation_rows": 0,
+      "invalid_ohlc_rows": 0
+    },
+    {
+      "security_code": "000660",
+      "kind": "daily",
+      "rows": 1268,
+      "no_price_formation_rows": 0,
+      "invalid_ohlc_rows": 0
+    },
+    {
+      "security_code": "000660",
+      "kind": "intraday_1m",
+      "rows": 104692,
+      "no_price_formation_rows": 0,
+      "invalid_ohlc_rows": 0
+    }
+  ],
+  "selected_securities": [
+    {
+      "security_code": "005930",
+      "security_name": "삼성전자",
+      "market": "KOSPI"
+    },
+    {
+      "security_code": "000660",
+      "security_name": "SK하이닉스",
+      "market": "KOSPI"
+    }
+  ]
+}
